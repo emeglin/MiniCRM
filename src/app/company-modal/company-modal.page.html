@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon size="large" ion-button (click)="return()" name="backspace-outline"></ion-icon>
+    <ion-title>Ajouter une entreprise</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form  [formGroup]="addCompanyForm" class="flex flex-col mb-6">  
+    <ion-label>Nom de l'entreprise : </ion-label>
+    <ion-input [(ngModel)]="company_name" formControlName="company_name" [class.invalid]="!addCompanyForm.controls.company_name.valid && addCompanyForm.controls.company_name.dirty" id="normalInput"></ion-input>
+    <ion-label> Adresse: </ion-label>
+    <ion-input [(ngModel)]="company_address" formControlName="company_address" [class.invalid]="!addCompanyForm.controls.company_address.valid && addCompanyForm.controls.company_address.dirty" id="normalInput"></ion-input>
+    <ion-label> Code Postale: </ion-label>
+    <ion-input [(ngModel)]="company_code" formControlName="company_code" [class.invalid]="!addCompanyForm.controls.company_code.valid && addCompanyForm.controls.company_code.dirty" id="normalInput"></ion-input>
+    <ion-label> Ville: </ion-label>
+    <ion-input [(ngModel)]="company_city" formControlName="company_city" [class.invalid]="!addCompanyForm.controls.company_city.valid && addCompanyForm.controls.company_city.dirty" id="normalInput"></ion-input>
+    
+    <ion-button color="primary" (click)="submitForm()">Enregistrer</ion-button> 
+  </form>
+</ion-content>

@@ -1,0 +1,44 @@
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+#container {
+    text-align: center;
+    margin-top: 2em;
+    position: fixed;
+    top: 35%;
+    transform: translateY(-50%);
+
+  }
+  
+  #container strong {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  #container p {
+    font-size: 16px;
+    line-height: 22px;
+    color: #8c8c8c;
+    margin: 0;
+  }
+  
+  #container a {
+    text-decoration: none;
+  }
+
+  .invalid{
+    border-bottom: solid 1px #dd4d4d;
+    color: #dd4d4d;
+  }
+
+  #normalInput{
+    border-bottom: solid 1px #8c8c8c;
+    
+  }
+
+  ion-icon{
+    color: white
+  }

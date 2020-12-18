@@ -1,0 +1,133 @@
+
+{
+    "person": [
+        {
+            "person_id": 1,
+            "name": "Dupont", 
+            "firstname": "Frédérique",
+            "mail": "fred@mail.com",
+            "phone": "0630691032",
+            "compagny_id": 1,
+            "is_customer": true,
+            "sale_date": "10-12-2020"
+        },
+        {
+            "person_id": 2,
+            "name": "Lapin", 
+            "firstname": "Marc",
+            "mail": "marcl@mail.com",
+            "phone": "0630691024",
+            "compagny_id": 2,
+            "is_customer": true,
+            "sale_date": "13-12-2020"
+        },
+        {
+            "person_id": 3,
+            "name": "Dubois", 
+            "firstname": "Marie",
+            "mail": "marie@mail.com",
+            "phone": "063069102sqs4",
+            "compagny_id": 2,
+            "is_customer": false,
+            "sale_date": "null"
+        }
+    ],
+    "company" :[
+        {
+            "company_id": 1,
+            "name": "EDF", 
+            "address": "10 rue des fleurs",
+            "zip_code": "95000",
+            "city": "Paris"
+        },
+        {
+            "company_id": 2,
+            "name": "Orange", 
+            "address": "142 rue des GPU",
+            "zip_code": "59000",
+            "city": "Lille"
+        },
+        {
+            "company_id": 3,
+            "name": "Mairie de Paris", 
+            "address": "10 rue des charpentier",
+            "zip_code": "95000",
+            "city": "Paris"
+        },
+        {
+            "company_id": 4,
+            "name": "OVH", 
+            "address": "3 boulevard kelermann",
+            "zip_code": "59161",
+            "city": "Roubaix"
+        },
+        {
+            "company_id": 5,
+            "name": "GRDF", 
+            "address": "10 rue des gaz",
+            "zip_code": "95000",
+            "city": "Rouen"
+        },
+        {
+            "company_id": 6,
+            "name": "SFR", 
+            "address": "142 rue de la 5G",
+            "zip_code": "59000",
+            "city": "Marseille"
+        },
+        {
+            "company_id": 7,
+            "name": "Enedis", 
+            "address": "10 rue des lumières",
+            "zip_code": "59550",
+            "city": "Douai"
+        },
+        {
+            "company_id": 8,
+            "name": "Aldi", 
+            "address": "142 rue de la république",
+            "zip_code": "75012",
+            "city": "Paris"
+        }
+    ],
+
+    "product" :[
+        {
+            "product_id": 1,
+            "name": "Frommage de chèvre", 
+            "price": 2
+        },
+        {
+            "product_id": 2,
+            "name": "Pain au céréale", 
+            "price": 1.33
+        }
+    ],
+    "tabSale": [
+        {
+            "person_id": 1,
+            "sale": [
+                {
+                    "product_id": 1,
+                    "quantity": 1500
+                },
+                {
+                    "product_id": 2,
+                    "quantity": 200
+                }
+            ],
+            "total": 3266
+        },
+        {
+            "person_id": 2,
+            "tabsale": [
+                {
+                    "sale_id": 3, 
+                    "product_id": 2,
+                    "quantity": 150
+                }
+            ],
+            "total": 199.5
+        }
+    ]
+}

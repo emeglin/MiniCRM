@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>List des entreprises</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- Default Refresher -->
+<ion-content>
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+
+  <div id="add-section">
+    <ion-fab-button (click)="addCompany()"><ion-icon name="add-outline"></ion-icon></ion-fab-button>
+  </div>
+
+  <div id="container">
+    <!-- Default Searchbar -->
+      <ion-searchbar (ionChange)="listenInput(inputSearch)" [(ngModel)]="inputSearch" placeholder="Rechercher"></ion-searchbar>
+    <ion-list>
+      <ion-item *ngFor="let item of tabcompany">
+        <ion-label (click)="getDetailView(item.company_id)"> {{item.name}} </ion-label> 
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

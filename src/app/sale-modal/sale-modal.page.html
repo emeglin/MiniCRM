@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon size="large" ion-button (click)="return()" name="backspace-outline"></ion-icon>
+    <ion-title>Ajout d'une Vente</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form  [formGroup]="addSaleForm" id="container">  
+    <ion-label>Nom du client : </ion-label>
+    <ion-input [(ngModel)]="cust_name" formControlName="cust_name" [class.invalid]="!addSaleForm.controls.cust_name.valid && addSaleFormz.controls.cust_name.dirty" id="normalInput"></ion-input>
+    <ion-label> Produits: </ion-label>
+    <ion-input [(ngModel)]="cust_name" formControlName="cust_name" [class.invalid]="!addSaleForm.controls.cust_name.valid && addSaleFormz.controls.cust_name.dirty" id="normalInput"></ion-input>
+    <ion-button color="primary" (click)="submitForm()">Enregistrer</ion-button> 
+  </form>
+</ion-content>
